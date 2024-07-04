@@ -24,6 +24,20 @@
                     {{ $job->description }}
                 </p>
             </div>
+            <div class="flex flex-col gap-2 border p-2 rounded-lg">
+                <h3 class="font-semibold text-lg">Employer Details:</h3>
+                <p>
+                    {{ $job->employer->name }}
+                </p>
+                <p>
+                    {{ $job->employer->email }}
+                </p>
+                <p>
+                    {{ $job->employer->phone }}
+                </p>
+                <p>
+                    {{ $job->employer->website }}
+                </p>
+            </div>
         </div>
-    </div>
 </x-layout>

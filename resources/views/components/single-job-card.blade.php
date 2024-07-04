@@ -1,7 +1,8 @@
 @props(['job'])
 
 <div class="rounded-lg shadow-sm p-4 relative bg-white">
-    <h2 class="text-2xl font-medium">{{ $job->title }}</h2>
+    <h2 class="font-semibold">{{ $job->employer->name }}</h2>
+    <h3 class="text-2xl font-medium">{{ $job->title }}</h3>
     <ul class="flex items-center gap-4 mt-4">
         <li class="flex items-center gap-2 text-gray-500 capitalize">
             <i class="fa-solid fa-location-dot"></i>

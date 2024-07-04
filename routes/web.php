@@ -9,7 +9,7 @@ Route::get('/', function () {
 
 
 Route::get('/job-listings', function () {
-    $jobs = JobListing::all();
+    $jobs = JobListing::with('employer')->get();
     return view('job-listings', ['jobs' => $jobs]);
 });
 
